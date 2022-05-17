@@ -1,5 +1,5 @@
 import React from 'react'
-import './testimonials.css'
+import './testimonials.scss'
 import AVTR1 from '../../assets/testimonial.png'
 
 // import Swiper core and required modules

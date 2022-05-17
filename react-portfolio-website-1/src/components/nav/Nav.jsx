@@ -1,5 +1,5 @@
 import React from 'react'
-import './nav.css'
+import './nav.scss'
 import {AiOutlineHome} from 'react-icons/ai'
 import {AiOutlineUser} from 'react-icons/ai'
 import {BiBookBookmark} from 'react-icons/bi'

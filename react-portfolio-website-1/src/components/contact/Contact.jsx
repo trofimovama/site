@@ -1,5 +1,5 @@
 import React from 'react'
-import './contact.css'
+import './contact.scss'
 import {GoMail} from 'react-icons/go'
 import {RiMessengerLine} from 'react-icons/ri'
 import {RiWhatsappLine} from 'react-icons/ri'

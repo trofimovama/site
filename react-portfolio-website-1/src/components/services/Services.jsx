@@ -1,5 +1,5 @@
 import React from 'react'
-import './services.css'
+import './services.scss'
 import {BiCheck} from 'react-icons/bi'
 
 const Services = () => {

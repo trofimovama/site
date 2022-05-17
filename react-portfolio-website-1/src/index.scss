@@ -10,20 +10,20 @@
     text-decoration: none;
 }
 
-:root {
-    --color-bg:  #09001a;
-    --color-bg-variant: purple;
-   --color-primary: pink;
-    --color-primary-variant: rgba(77, 181, 255, 0.4);
-    --color-white: #fff;
-   --color-light: rgba(255, 255, 255, 0.6);
 
-    --transition: all 400ms ease;
+    $color-bg:  powderblue;
+    $color-bg-variant: purple;
+   $color-primary: crimson;
+    $color-primary-variant: rgba(77, 181, 255, 0.4);
+    $color-white: black;
+   $color-light: darkblue;
 
-    --container-width-lg: 75%;
-   --container-width-md: 86%;
-    --container-width-sm: 90%;
-}
+    $transition: all 400ms ease;
+
+    $container-width-lg: 75%;
+   $container-width-md: 86%;
+    $container-width-sm: 90%;
+
 
 html {
     scroll-behavior: smooth;
@@ -35,8 +35,8 @@ html {
 
 body {
     font-family: 'Poppins', sans-serif;
-    background: var(--color-bg);
-    color: var(--color-white);
+    background: $color-bg;
+    color: $color-white;
     line-height: 1.7;
     background-image:url(../src/assets/texture.png)
 }
@@ -44,7 +44,7 @@ body {
 /* ========== GENERAL STYLES ============== */
 
 .container {
-    width: var(--container-width-lg);
+    width: $container-width-lg;
     margin: 0 auto;
 }
 
@@ -66,47 +66,47 @@ section {
 
 section > h2, section > h5 {
     text-align: center;
-    color: var(--color-light)
+    color: $color-light;
 }
 
 section > h2 {
-    color: var(--color-primary);
+    color: $color-primary;
     margin-bottom: 3rem;
 }
 
 .text-light {
-    color: var(--color-light);
+    color: $color-light;
 }
 
 a {
-    color: var(--color-primary);
-    transition: var(--transition);
+    color: $color-primary;
+    transition: $transition;
 }
 
 a:hover {
-    color: var(--color-white);
+    color: $color-light;
 }
 
 .btn {
     width: max-content;
     display: inline-block;
-    color: var(--color-primary);
+    color: $color-primary;
     padding: 0.75rem 1.2rem;
     border-radius: 0.4rem;
     cursor: pointer;
-    border: 1px solid var(--color-primary);
-    transition: var(--transition);
+    border: 1px solid $color-primary;
+    transition: $transition;
 }
 
 .btn:hover {
-    background: var(--color-white);
-    color: var(--color-bg);
+    background: $color-white;
+    color: $color-bg;
     border-color: transparent;
 }
 
 .btn-primary {
-    background: var(--color-primary);
-    color: var(--color-bg);
+    background: $color-primary;
+    color: $color-bg;
 }
 
 img {
@@ -119,7 +119,7 @@ img {
 
 @media screen and (max-width: 1024px) {
    .container {
-       width: var(--container-width-md);
+       width: $container-width-md;
    } 
 
    section {
@@ -131,7 +131,7 @@ img {
 
 @media screen and (max-width: 600px) {
     .container {
-        width: var(--container-width-sm);
+        width: --container-width-sm;
     } 
  
     section > h2 {
